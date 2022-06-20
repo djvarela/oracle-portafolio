@@ -1,0 +1,431 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    background-color: rgba(245, 245, 245, 1);
+    box-sizing: border-box;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+   
+}
+header{
+     width: 99%;
+    padding: .5em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+   }
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2{
+    display: flex;
+    border-radius: 50%;
+    padding: .5em;
+    width: 2.3em;
+    color: rgb(14, 83, 98);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.logo h2::after{    
+    content: ">";
+}
+
+.logo h2::before{    
+    content: "<";
+}
+.logo h3{
+    color: rgb(21, 61, 70);
+    font-size: 1.5rem;
+    margin-left: .5em;
+}
+nav{
+    display: flex;
+    text-align: end;
+}
+ul {
+    display: flex;
+    padding: .5em;
+    justify-content: end;
+    
+}
+
+li{
+   color:#222;
+    list-style-type: none;
+    padding: .5em;
+    text-align: end;
+    font-weight: bold;
+}
+li a{
+    
+    text-decoration: none;
+    color:#222;
+}
+
+.banner{
+background-color: rgba(245, 245, 245, 1);
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 90%;
+}
+
+
+.perfil{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.perfil h1{
+display: flex;
+padding: 1em;
+width: 70%;
+font-weight: bold;
+font-size: 3.2rem;
+margin-left: 5em;
+margin-bottom: 0;
+}
+
+.perfil p{
+    margin: none;
+    text-align: center;
+}
+
+.avatar{
+padding: 1em;    
+width: 70%;
+
+}
+
+.avatar img{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 32%;
+  
+}
+
+.links{
+display: flex;
+justify-content: start;
+text-align: start;
+margin-left: 20em;
+} 
+
+.about, .formacion, .proyectos{
+    margin: none;
+    background-color: #EAF2FD;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+.about-contenedor{
+    margin: auto;
+    width: 70%;
+    
+}
+.about-contenedor h2{
+    font-size: 2.5rem;
+}
+.about-contenedor p{
+    width: 80%;
+    font-size: 1.4rem;
+}
+
+
+
+.skills, .hobbies, .trabajo, .contacto{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 90%;
+align-items: center;
+margin-top: 5em;
+}
+
+.skills h2{
+    text-shadow: 2px 2px 2px 2px rgb(97, 93, 93);
+}
+
+.skills-conteiner, .hobbies-conteiner{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 50%;
+height: 50%;
+text-align: center;
+justify-content: center;
+}
+
+
+
+.skills-conteiner li{
+    display: flex;
+    flex-direction: column;
+    width: 3em;
+    padding: 5em;
+    border: 1px solid rgb(148, 148, 148);
+    margin-left: .5em;
+    align-items: center;
+    
+}
+.skills-conteiner li img{
+    width: 3em;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: .5em;
+}
+
+.hobbies-conteiner li{
+    display: flex;
+    flex-direction: column;
+    width: 3em;
+    padding: 5em;
+    border: 1px solid rgb(148, 148, 148);
+    margin-left: 1em;
+    align-items: center;
+    text-align: center;
+}
+.hobbies-conteiner li img{
+    width: 3em;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: .5em;
+}
+
+.formacion{
+    display: flex;
+    height: auto;
+}
+.formacion h2{
+    padding-top: 2em;
+    text-align: center;
+  
+}
+
+
+.acedemy-conteiner, .trabajo-conteiner{
+    display: flex;
+    flex-direction:row;
+    margin:auto;
+    width: 70%;
+    justify-content: center;
+    
+}
+
+.acedemy-conteiner li{
+    display: flex;
+    width: 30%;
+    flex-direction:column;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    margin-left: 1em;
+    
+}
+
+.acedemy-conteiner img{
+    width: 9em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.acedemy-conteiner p{
+    margin: 0;
+}
+.trabajo{
+    text-align: center;
+}
+.trabajo h2{
+    margin-top: 3em;
+}
+.trabajo-conteiner li{
+    display: flex;
+    width: 30%;
+    flex-direction:column;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    margin-left: 1em;
+
+}
+.trabajo-conteiner h2{
+    font-size: 11rem;
+    color: rgb(18, 57, 102);
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+   justify-content: center;
+   margin:0;
+}
+.proyectos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+   
+    
+}
+.proyectos h2{
+    margin-top: 1em;
+}
+.encriptador-proyecto, .ahorcado-proyecto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.encriptador-proyecto img{
+    padding: 1em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.info-encriptador{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    flex-direction: column;
+}
+.info-encriptador a{
+    width: 7em;
+    background-color: rgb(179, 170, 170);
+    padding:1em;
+    text-decoration: none;
+    border-radius: 5em;
+    color: #fff;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: .5em
+    
+}
+.ahorcado-proyecto img{
+    padding: 1em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.contacto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.formulario-contacto{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    border: 1px solid rgba(88, 86, 85, 0.274);
+    width: 90%;
+    border-radius: 1em;
+}
+.formulario-contacto img{
+width: 50%;
+object-fit: contain;
+height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   position: absolute;
+    padding: 2em;
+     position: relative;
+    margin-left: 1em;
+}
+
+.form-grup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+form input, textarea{
+    padding: 1em;
+    margin-bottom:auto;
+  border: none;
+outline: none;
+resize: none;
+  
+}
+
+
+
+ input:focus + label,
+input:not(:placeholder-shown)+ label { 
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top ;
+    color: #222;
+  
+}
+
+
+
+label{
+padding-bottom: .5em;
+ padding-left: .5em;
+  position: absolute;
+    transform: translateY(10px);
+    transition: transform .5s red;
+
+}
+
+.form-enviar{
+background-color: #244442;
+color: #fff;
+cursor: pointer;
+}
+
+.form-enviar:hover{
+transform: scale(.9);
+}
+footer {
+margin-top: 1em;
+text-align: center;
+padding: 1em;
+background-color: #222;
+
+color: #fff;
+display: flex;
+justify-content: center;
+}
+
