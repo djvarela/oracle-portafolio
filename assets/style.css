@@ -40,7 +40,6 @@ header{
     display: flex;
     border-radius: 50%;
     padding: .5em;
-    width: 2.3em;
     color: rgb(14, 83, 98);
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -84,11 +83,22 @@ li a{
     color:#222;
 }
 
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:#222;
+    font-weight: bold;
+}
+
 .banner{
 background-color: rgba(245, 245, 245, 1);
 display: flex;
 flex-direction: row;
 justify-content: center;
+align-items: flex-start;
+align-content: center;
 width: 90%;
 }
 
@@ -97,21 +107,25 @@ width: 90%;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+align-content: center;
+
 
 }
 .perfil h1{
 display: flex;
 padding: 1em;
-width: 70%;
+width: 80%;
 font-weight: bold;
 font-size: 3.2rem;
-margin-left: 5em;
+
 margin-bottom: 0;
 }
 
 .perfil p{
     margin: none;
     text-align: center;
+margin-bottom: 1em;
 }
 
 .avatar{
@@ -125,6 +139,8 @@ width: 70%;
     display: flex;
     justify-content: center;
     width: 32%;
+    margin-top: 2em;
+    
   
 }
 
@@ -138,23 +154,28 @@ margin-left: 20em;
 .about, .formacion, .proyectos{
     margin: none;
     background-color: #EAF2FD;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 40%;
+    padding: 1em;
 }
 
 .about-contenedor{
     margin: auto;
-    width: 70%;
+    width: 100%;
+    padding: 2em;
+   
     
 }
 .about-contenedor h2{
     font-size: 2.5rem;
+    padding: 1em;
 }
 .about-contenedor p{
-    width: 80%;
+    width: 90%;
+    text-align: justify;
     font-size: 1.4rem;
+    margin-left: 2em;
 }
 
 
@@ -187,15 +208,19 @@ justify-content: center;
 .skills-conteiner li{
     display: flex;
     flex-direction: column;
-    width: 3em;
+    width: 6em;
+    height: 6em;
     padding: 5em;
-    border: 1px solid rgb(148, 148, 148);
+    border: 1px solid rgba(148, 148, 148, 0.222);
+    box-shadow: 1px 1px 1px -1px #222;
     margin-left: .5em;
     align-items: center;
+    justify-content: center;
     
 }
 .skills-conteiner li img{
-    width: 3em;
+    max-width: 4em;
+    width: 5em;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -205,15 +230,19 @@ justify-content: center;
 .hobbies-conteiner li{
     display: flex;
     flex-direction: column;
-    width: 3em;
+    width: 6em;
+    height: 6em;
     padding: 5em;
-    border: 1px solid rgb(148, 148, 148);
+    border: 1px solid rgba(148, 148, 148, 0.222);
+    box-shadow: 1px 1px 1px -1px #222;
     margin-left: 1em;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .hobbies-conteiner li img{
-    width: 3em;
+    max-width: 4em;
+    width: 5em;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -267,6 +296,7 @@ justify-content: center;
 }
 .trabajo h2{
     margin-top: 3em;
+    display: flex;
 }
 .trabajo-conteiner li{
     display: flex;
@@ -321,7 +351,7 @@ justify-content: center;
     flex-direction: column;
 }
 .info-encriptador a{
-    width: 7em;
+    
     background-color: rgb(179, 170, 170);
     padding:1em;
     text-decoration: none;
@@ -429,3 +459,107 @@ display: flex;
 justify-content: center;
 }
 
+
+@media only screen and (max-width: 700px){
+    body{
+        margin: 0;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav a{
+    margin-left: 1em;
+    }  
+   
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner h1{
+        padding: 1em;
+        margin: 0;
+        flex-direction: column;
+        font-size: 2rem;
+        width: 90%;
+    }
+    
+    .perfil p{
+        display: flex;
+       font-size: 1rem;
+       margin:0;
+    }
+    .avatar{
+        width: 100%;
+        padding: .5em;
+    }
+    .avatar img{
+        width: 50%;
+        margin: 0;
+    }
+    
+    .about, .skills,.hobbies, .contacto, .formacion, .trabajo, .proyectos, .acedemy-conteiner, .trabajo-conteiner, .skills-conteiner, .hobbies-conteiner{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .form-enviar:hover{
+        flex-direction: column;
+    }
+    .about p{
+        width: auto;
+    }
+     li{
+        margin-bottom: 1em;
+    }
+ 
+
+    .encriptador-proyecto, .ahorcado-proyecto{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .proyectos img{
+        width: 70%;
+    }
+    .formulario-contacto{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .links{
+        margin: 0;
+    }
+    .trabajo-conteiner li{
+        width: 90%;
+        margin-left:0;
+        display: flex;
+    }
+    .acedemy-conteiner li{
+        width: auto;
+    }
+    .formulario-contacto img{
+       display: none;
+       
+    }
+    /* .formulario-contacto  p{
+        font-size: rem;
+    } */
+    
+}
