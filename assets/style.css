@@ -554,6 +554,9 @@ justify-content: center;
     .acedemy-conteiner li{
         width: auto;
     }
+    form{
+        width: 100%;
+    }
     .formulario-contacto img{
        display: none;
        
