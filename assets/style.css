@@ -522,6 +522,7 @@ justify-content: center;
     }
     .about p{
         width: auto;
+        text-align: left;
     }
      li{
         margin-bottom: 1em;
